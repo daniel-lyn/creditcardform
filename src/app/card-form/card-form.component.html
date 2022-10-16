@@ -1,0 +1,7 @@
+<form [formGroup]="cardForm">
+    <app-input [control]="$any(cardForm).get('name')"></app-input>
+</form>
+<hr>
+ 
+
+<div>Errors Around Name: {{ cardForm.controls.name.errors | json }}</div>
